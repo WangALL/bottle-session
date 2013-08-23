@@ -7,6 +7,7 @@ Usage Example::
 
 	import bottle
 	from bottle_session import SessionPlugin
+	from beaker.middleware import SessionMiddleware
 
 	app = bottle.Bottle()
 	plugin = SessionPlugin(always=True)
