@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 # http://bottlepy.org/docs/dev/plugindev.html
 '''
 Usage Example::
@@ -62,6 +63,7 @@ class SessionPlugin(object):
 
 		def wrapper(*args, **kwargs):
 			session = request.environ['beaker.session']
+			# update access_time
 			session.id
 			if has_keyword:
 				kwargs[self.keyword] = session
